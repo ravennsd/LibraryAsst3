@@ -1,0 +1,103 @@
+
+ .navbar-nav{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+    overflow: hidden;
+   
+}
+.nav-item{
+    float: left;
+    padding-right: 10px;
+}
+li a {
+    display: block;
+    padding: 14px 16px;
+    
+    color: thistle;
+    font-weight: 400;
+}
+.img1{
+    
+    padding-left: 0%;
+    border-left:0%;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+}
+
+.row{
+    overflow: visible;
+    color:rgb(20, 18, 26); font-family: serif;
+    padding:25px; height:70%;
+    background-color: white;
+    margin-bottom:2px;
+}
+.img2{
+    height: 140px;
+    width:140px;
+    border-radius: 50%;  
+}
+.heading { 
+    font-family:serif; font-weight: 400; font-size:55px;
+    background-color:rgb(26, 26, 102); color:cornsilk; height: 140px; padding-bottom: 15px; padding-left:20px;
+    letter-spacing: 2px;
+}
+
+.heading2 {
+    font-family:serif; font-weight: 400; font-size:55px;
+    background-color:rgb(26, 26, 102); color: cornsilk; height: 100px; padding: 25px ;
+    letter-spacing: 8px;
+}
+body{
+    background-color: rgb(245, 239, 239);
+}
+.container { 
+    background-color:white;
+  width: 100%;
+}
+
+.jumbotron{
+    margin-top: -3rem;
+    width:100%;
+    background-color: white;
+    align-content: center;
+    align-items: center;
+    /* display: inline-block; */
+}
+.vertical-center{
+    display: flex;
+}
+.navbar{
+    height:5rem;
+}
+.navbar-custom{
+    background-color: rgb(44, 44, 160);
+    font-size: larger;
+
+}
+.text-justify{
+background-color: rgb(204, 190, 98);
+border-radius: 5%;
+border:5px;
+padding: 5px;
+}
+ #pass{
+     margin: 0px;
+
+ }
+
+.status{
+color:gray;
+
+}
+.bullet{
+    list-style-type: disc;
+}
+.ml-auto{ 
+
+    left: auto; 
+}
+.transbox{
+    opacity: 0.8;
+}

@@ -35,7 +35,7 @@ function route2(nav) {
 
     authorsRouter.get('/:id',function(req,res) {
         const id = req.params.id;
-        Bookdata.findOne({_id: id})
+        authorData.findOne({_id: id})
         .then(function(book) { 
             res.render('book', 
             {                                                                           //Here, books means books.ejs

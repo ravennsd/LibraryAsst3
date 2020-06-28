@@ -1,6 +1,6 @@
 const express = require('express');
 const authorsRouter = express.Router();
-const authorData = require('../model/Bookdata') 
+const authorData = require('../model/authorData') 
 
 function route2(nav) {
     // var authors = [
@@ -36,12 +36,12 @@ function route2(nav) {
     authorsRouter.get('/:id',function(req,res) {
         const id = req.params.id;
         authorData.findOne({_id: id})
-        .then(function(book) { 
-            res.render('book', 
+        .then(function(author) { 
+            res.render('author', 
             {                                                                           //Here, books means books.ejs
                 nav,
                 title:'Library',
-                book                                                       // book: books[id]  No need since theres no array anymore        
+                author                                                      // book: books[id]  No need since theres no array anymore        
             }); 
         })  
     })

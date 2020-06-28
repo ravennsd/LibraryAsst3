@@ -25,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="/" class="navbar-brand">Home</a>
+       
       </div>
       <nav class="collapse navbar-collapse" role="navigation">
         <ul class="nav navbar-nav">
@@ -54,7 +54,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1><%=author.Name%></h1>
+        <h1><%=author.name%></h1>
           <p class="lead"></p>
     </div>
     <div class="col-md-5">
@@ -99,17 +99,27 @@
                       style="width:100px;height:100px" class="img-circle"></a>
                 </div>
                 <div class="col-md-10 col-sm-9">
-                  <h3><%=author.Name%></h3>
+                  <h3><%=author.name%></h3>
                   <div class="row">
                     <div class="col-xs-9">
-                      <h4><span class="label label-default"><%=author.About%></span></h4>
+                      <h4><span class="label label-default"><%=author.about%></span></h4>
                       <h4>
-                        <small style="font-family:courier,'new courier';" class="text-muted"><%=author.Country%><a
-                            href="/authors/<%=i%>" class="text-muted">&nbsp;Read More</a><a href=""
-                            class="text-muted"></small>
-                      </h4>
+                        <small style="font-family:courier,'new courier';" class="text-muted"><%=author.country%> 
+                         </small>
+                        </h4>
+                    
                     </div>
                     <div class="col-xs-3"></div>
+                    <form method="GET" action="/addAuthor/edit/<%=author._id%>">
+                      <!-- <input type="hidden"> -->
+                      <button type="submit">EDIT</button>
+          
+                      </form>
+                      <form method="GET" action="/addAuthor/delete/<%=author._id%>">
+    
+                        <button type="submit">DELETE</button>
+            
+                        </form>
                   </div>
                   <br><br>
                 </div>

@@ -18,6 +18,9 @@ const loginRouter = require('./src/routes/loginRoute')(nav);
 const signupRouter = require('./src/routes/signupRoute')(nav);
 const adminRouter = require('./src/routes/adminRoutes')(nav);
 const addAuthorRouter = require('./src/routes/addAuthorRoute')(nav);
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended:true }))
+app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname,'/public')));
 app.set('view engine','ejs');
